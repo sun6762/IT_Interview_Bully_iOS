@@ -9,12 +9,13 @@ This document defines local development rules for this project without CI enforc
   - `ViewModels`: state transition and UI-facing orchestration
   - `Domain`: models and repository protocols
   - `Data`: repository implementations and data loading
-- Do not call `Data` layer directly from SwiftUI views.
+- UI stack uses UIKit + SnapKit. Do not call `Data` layer directly from UIKit views/controllers.
 - Keep one primary type per file.
 
 ## 2. Swift Code Rules
 
 - Use `final` for concrete classes unless inheritance is required.
+- Custom app types must use `SS` prefix (enforced by SwiftLint custom rule).
 - Prefer value types (`struct`, `enum`) for models and states.
 - Use `weak self` in escaping closures when self ownership is not required.
 - Keep functions focused:

@@ -1,15 +1,14 @@
 import Foundation
 
-struct InterviewIndex: Decodable {
-    let categories: [InterviewCategory]
-    let questions: [InterviewQuestionRecord]
+struct SSInterviewIndex: Decodable {
+    let categories: [SSInterviewCategory]
+    let questions: [SSInterviewQuestionRecord]
 }
 
-struct InterviewQuestionRecord: Decodable {
+struct SSInterviewQuestionRecord: Decodable {
     let id: String
     let title: String
     let categoryID: String
     let tags: [String]
     let markdownPath: String
 }
-

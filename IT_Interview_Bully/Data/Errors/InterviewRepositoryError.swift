@@ -1,6 +1,6 @@
 import Foundation
 
-enum InterviewRepositoryError: LocalizedError {
+enum SSInterviewRepositoryError: LocalizedError {
     case missingResource(name: String, extension: String)
     case invalidIndexData
     case missingCategory(id: String)
@@ -22,4 +22,3 @@ enum InterviewRepositoryError: LocalizedError {
         }
     }
 }
-

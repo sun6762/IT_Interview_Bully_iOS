@@ -1,17 +1,17 @@
 import Combine
 import Foundation
 
-final class QuestionListViewModel: ObservableObject {
-    @Published private(set) var state: LoadableState<[InterviewQuestionSummary]> = .idle
-    @Published private(set) var categories: [InterviewCategory] = []
+final class SSQuestionListViewModel {
+    @Published private(set) var state: SSLoadableState<[SSInterviewQuestionSummary]> = .idle
+    @Published private(set) var categories: [SSInterviewCategory] = []
     @Published private(set) var selectedCategoryID: String?
 
-    private let repository: InterviewRepository
+    private let repository: SSInterviewRepository
     private var cancellables = Set<AnyCancellable>()
     private var hasLoaded = false
-    private var allQuestions: [InterviewQuestionSummary] = []
+    private var allQuestions: [SSInterviewQuestionSummary] = []
 
-    init(repository: InterviewRepository) {
+    init(repository: SSInterviewRepository) {
         self.repository = repository
     }
 
@@ -65,4 +65,3 @@ final class QuestionListViewModel: ObservableObject {
         }
     }
 }
-

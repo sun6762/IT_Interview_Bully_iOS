@@ -4,6 +4,7 @@ use_frameworks!
 target 'IT_Interview_Bully' do
   pod 'MarkdownView', '~> 1.9'
   pod 'Highlightr', '~> 2.1'
+  pod 'SnapKit', '~> 5.7'
 end
 
 target 'IT_Interview_BullyTests' do

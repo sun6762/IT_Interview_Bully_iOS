@@ -1,11 +1,10 @@
 import Foundation
 
-final class AppDIContainer {
-    let interviewRepository: InterviewRepository
+final class SSAppDIContainer {
+    let interviewRepository: SSInterviewRepository
 
     init(bundle: Bundle = .main) {
-        let loader = BundleResourceLoader(bundle: bundle)
-        self.interviewRepository = BundleInterviewRepository(loader: loader)
+        let loader = SSBundleResourceLoader(bundle: bundle)
+        self.interviewRepository = SSBundleInterviewRepository(loader: loader)
     }
 }
-

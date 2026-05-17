@@ -1,9 +1,8 @@
-import SwiftUI
 import UIKit
 
-final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+final class SSSceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
-    private let container = AppDIContainer()
+    private let container = SSAppDIContainer()
 
     func scene(
         _ scene: UIScene,
@@ -14,15 +13,16 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
 
-        let rootView = QuestionListView(
-            viewModel: QuestionListViewModel(repository: container.interviewRepository),
+        let viewModel = SSQuestionListViewModel(repository: container.interviewRepository)
+        let rootViewController = SSQuestionListViewController(
+            viewModel: viewModel,
             detailViewModelFactory: { [container] summary in
-                QuestionDetailViewModel(questionID: summary.id, repository: container.interviewRepository)
+                SSQuestionDetailViewModel(questionID: summary.id, repository: container.interviewRepository)
             }
         )
 
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = UIHostingController(rootView: rootView)
+        window.rootViewController = UINavigationController(rootViewController: rootViewController)
         window.makeKeyAndVisible()
         self.window = window
     }

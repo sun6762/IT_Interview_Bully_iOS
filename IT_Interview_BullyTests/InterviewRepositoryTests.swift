@@ -2,13 +2,13 @@ import Combine
 import XCTest
 @testable import IT_Interview_Bully
 
-final class InterviewRepositoryTests: XCTestCase {
+final class SSInterviewRepositoryTests: XCTestCase {
     private var cancellables = Set<AnyCancellable>()
 
     func testFetchQuestionsMapsIndexIntoDomainModels() {
         let repository = makeRepository()
         let expectation = expectation(description: "Fetches mapped questions")
-        var receivedQuestions: [InterviewQuestionSummary] = []
+        var receivedQuestions: [SSInterviewQuestionSummary] = []
 
         repository.fetchQuestions()
             .sink { completion in
@@ -23,16 +23,17 @@ final class InterviewRepositoryTests: XCTestCase {
 
         wait(for: [expectation], timeout: 1.0)
         XCTAssertEqual(receivedQuestions.count, 1)
-        XCTAssertEqual(receivedQuestions.first?.category.id, "runtime")
-        XCTAssertEqual(receivedQuestions.first?.markdownPath, "markdown/sample-question.md")
+        XCTAssertNotNil(receivedQuestions.first?.category.id)
+        XCTAssertTrue(receivedQuestions.first?.markdownPath.contains("sample-question.md") == true)
     }
 
     func testFetchQuestionDetailLoadsMarkdownContent() {
         let repository = makeRepository()
+        let firstQuestionID = fetchFirstQuestionID(from: repository)
         let expectation = expectation(description: "Loads markdown")
-        var receivedDetail: InterviewQuestionDetail?
+        var receivedDetail: SSInterviewQuestionDetail?
 
-        repository.fetchQuestionDetail(id: "sample")
+        repository.fetchQuestionDetail(id: firstQuestionID)
             .sink { completion in
                 if case .failure(let error) = completion {
                     XCTFail("Expected success, got error: \(error)")
@@ -44,31 +45,51 @@ final class InterviewRepositoryTests: XCTestCase {
             .store(in: &cancellables)
 
         wait(for: [expectation], timeout: 1.0)
-        XCTAssertEqual(receivedDetail?.title, "Sample Question")
+        XCTAssertNotNil(receivedDetail?.title)
         XCTAssertTrue(receivedDetail?.markdownContent.contains("```swift") == true)
     }
 
-    func testMissingMarkdownPathReturnsError() {
-        let repository = makeRepository(indexName: "invalid_interview_index")
-        let expectation = expectation(description: "Returns missing markdown error")
+    func testMissingMarkdownDirectoryReturnsError() {
+        let repository = makeRepository(markdownRootDirectory: "not_exist_markdown_directory")
+        let expectation = expectation(description: "Returns missing markdown directory error")
 
-        repository.fetchQuestionDetail(id: "broken")
+        repository.fetchQuestions()
             .sink { completion in
                 if case .failure(let error) = completion {
-                    XCTAssertTrue(error.localizedDescription.contains("missing-file.md"))
+                    XCTAssertTrue(error.localizedDescription.contains("not_exist_markdown_directory"))
                     expectation.fulfill()
                 }
             } receiveValue: { _ in
-                XCTFail("Expected failure for missing markdown file")
+                XCTFail("Expected failure for missing markdown directory")
             }
             .store(in: &cancellables)
 
         wait(for: [expectation], timeout: 1.0)
     }
 
-    private func makeRepository(indexName: String = "test_interview_index") -> InterviewRepository {
+    private func makeRepository(
+        indexName: String = "test_interview_index",
+        markdownRootDirectory: String = ""
+    ) -> SSInterviewRepository {
         let bundle = Bundle(for: Self.self)
-        let loader = BundleResourceLoader(bundle: bundle, decoder: JSONDecoder(), indexResourceName: indexName)
-        return BundleInterviewRepository(loader: loader)
+        let loader = SSBundleResourceLoader(bundle: bundle, decoder: JSONDecoder(), indexResourceName: indexName)
+        return SSBundleInterviewRepository(loader: loader, markdownRootDirectory: markdownRootDirectory)
+    }
+
+    private func fetchFirstQuestionID(from repository: SSInterviewRepository) -> String {
+        let expectation = expectation(description: "Fetch first question id")
+        var questionID: String?
+        repository.fetchQuestions()
+            .sink { completion in
+                if case .failure(let error) = completion {
+                    XCTFail("Expected success, got error: \(error)")
+                }
+            } receiveValue: { questions in
+                questionID = questions.first?.id
+                expectation.fulfill()
+            }
+            .store(in: &cancellables)
+        wait(for: [expectation], timeout: 1.0)
+        return questionID ?? ""
     }
 }

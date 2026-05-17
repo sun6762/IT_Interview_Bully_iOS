@@ -1,10 +1,9 @@
 import Foundation
 
-struct InterviewQuestionSummary: Identifiable, Hashable {
+struct SSInterviewQuestionSummary: Identifiable, Hashable {
     let id: String
     let title: String
-    let category: InterviewCategory
+    let category: SSInterviewCategory
     let tags: [String]
     let markdownPath: String
 }
-

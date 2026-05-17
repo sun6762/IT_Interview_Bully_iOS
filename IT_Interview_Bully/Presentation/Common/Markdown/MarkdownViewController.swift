@@ -1,8 +1,9 @@
 import Highlightr
 import MarkdownView
+import SnapKit
 import UIKit
 
-final class MarkdownViewController: UIViewController, MarkdownRenderableView {
+final class SSMarkdownViewController: UIViewController, SSMarkdownRenderableView {
     private let markdownView = MarkdownView()
     private let highlightr = Highlightr()
 
@@ -10,19 +11,14 @@ final class MarkdownViewController: UIViewController, MarkdownRenderableView {
         super.viewDidLoad()
 
         view.backgroundColor = .systemBackground
-        markdownView.translatesAutoresizingMaskIntoConstraints = false
         markdownView.isOpaque = false
         markdownView.backgroundColor = .clear
         markdownView.layer.cornerRadius = 14
         markdownView.clipsToBounds = true
         view.addSubview(markdownView)
-
-        NSLayoutConstraint.activate([
-            markdownView.topAnchor.constraint(equalTo: view.topAnchor),
-            markdownView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            markdownView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            markdownView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
+        markdownView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
 
         // Keep the highlighting engine instantiated so the scaffold is ready
         // for future custom fenced-code rendering without changing DI shape.

@@ -1,20 +1,24 @@
 PODS:
   - Highlightr (2.1.0)
   - MarkdownView (1.9.1)
+  - SnapKit (5.7.1)
 
 DEPENDENCIES:
   - Highlightr (~> 2.1)
   - MarkdownView (~> 1.9)
+  - SnapKit (~> 5.7)
 
 SPEC REPOS:
   trunk:
     - Highlightr
     - MarkdownView
+    - SnapKit
 
 SPEC CHECKSUMS:
   Highlightr: 595f3e100737c8de41113385da8bd0b5b65212c6
   MarkdownView: 22249778219cc22901f1454e8355298dd0bda7f0
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
 
-PODFILE CHECKSUM: 27e01206600e302d9df5f73417e3f4dbb835e2a2
+PODFILE CHECKSUM: 399e743889523d2595cbb58ebfa6e793d6ce7743
 
 COCOAPODS: 1.14.2

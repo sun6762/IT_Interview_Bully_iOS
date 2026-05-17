@@ -1,15 +1,15 @@
 import Combine
 import Foundation
 
-final class QuestionDetailViewModel: ObservableObject {
-    @Published private(set) var state: LoadableState<InterviewQuestionDetail> = .idle
+final class SSQuestionDetailViewModel {
+    @Published private(set) var state: SSLoadableState<SSInterviewQuestionDetail> = .idle
 
     private let questionID: String
-    private let repository: InterviewRepository
+    private let repository: SSInterviewRepository
     private var cancellables = Set<AnyCancellable>()
     private var hasLoaded = false
 
-    init(questionID: String, repository: InterviewRepository) {
+    init(questionID: String, repository: SSInterviewRepository) {
         self.questionID = questionID
         self.repository = repository
     }
@@ -46,4 +46,3 @@ final class QuestionDetailViewModel: ObservableObject {
             .store(in: &cancellables)
     }
 }
-

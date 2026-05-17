@@ -3,11 +3,11 @@
    <BuildAction buildImplicitDependencies='YES' parallelizeBuildables='YES'>
       <BuildActionEntries>
          <BuildActionEntry buildForAnalyzing='YES' buildForArchiving='YES' buildForProfiling='YES' buildForRunning='YES' buildForTesting='YES'>
-            <BuildableReference BlueprintIdentifier='A1547EB3CD621F00E6237576' BlueprintName='IT_Interview_Bully' BuildableIdentifier='primary' BuildableName='IT_Interview_Bully.app' ReferencedContainer='container:IT_Interview_Bully.xcodeproj'>
+            <BuildableReference BlueprintIdentifier='CC0A01E3625449F6330D9456' BlueprintName='IT_Interview_Bully' BuildableIdentifier='primary' BuildableName='IT_Interview_Bully.app' ReferencedContainer='container:IT_Interview_Bully.xcodeproj'>
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry buildForAnalyzing='NO' buildForArchiving='NO' buildForProfiling='NO' buildForRunning='NO' buildForTesting='YES'>
-            <BuildableReference BlueprintIdentifier='F0B2DB948AB7748FA41F9210' BlueprintName='IT_Interview_BullyTests' BuildableIdentifier='primary' BuildableName='IT_Interview_BullyTests.xctest' ReferencedContainer='container:IT_Interview_Bully.xcodeproj'>
+            <BuildableReference BlueprintIdentifier='2762BDD667BA8928F1080202' BlueprintName='IT_Interview_BullyTests' BuildableIdentifier='primary' BuildableName='IT_Interview_BullyTests.xctest' ReferencedContainer='container:IT_Interview_Bully.xcodeproj'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -15,14 +15,14 @@
    <TestAction buildConfiguration='Debug' selectedDebuggerIdentifier='Xcode.DebuggerFoundation.Debugger.LLDB' selectedLauncherIdentifier='Xcode.DebuggerFoundation.Launcher.LLDB' shouldUseLaunchSchemeArgsEnv='YES'>
       <Testables>
          <TestableReference skipped='NO'>
-            <BuildableReference BlueprintIdentifier='F0B2DB948AB7748FA41F9210' BlueprintName='IT_Interview_BullyTests' BuildableIdentifier='primary' BuildableName='IT_Interview_BullyTests.xctest' ReferencedContainer='container:IT_Interview_Bully.xcodeproj'>
+            <BuildableReference BlueprintIdentifier='2762BDD667BA8928F1080202' BlueprintName='IT_Interview_BullyTests' BuildableIdentifier='primary' BuildableName='IT_Interview_BullyTests.xctest' ReferencedContainer='container:IT_Interview_Bully.xcodeproj'>
             </BuildableReference>
          </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction allowLocationSimulation='YES' buildConfiguration='Debug' debugDocumentVersioning='YES' debugServiceExtension='internal' ignoresPersistentStateOnLaunch='NO' launchStyle='0' selectedDebuggerIdentifier='Xcode.DebuggerFoundation.Debugger.LLDB' selectedLauncherIdentifier='Xcode.DebuggerFoundation.Launcher.LLDB' useCustomWorkingDirectory='NO'>
       <BuildableProductRunnable>
-         <BuildableReference BlueprintIdentifier='A1547EB3CD621F00E6237576' BlueprintName='IT_Interview_Bully' BuildableIdentifier='primary' BuildableName='IT_Interview_Bully.app' ReferencedContainer='container:IT_Interview_Bully.xcodeproj'>
+         <BuildableReference BlueprintIdentifier='CC0A01E3625449F6330D9456' BlueprintName='IT_Interview_Bully' BuildableIdentifier='primary' BuildableName='IT_Interview_Bully.app' ReferencedContainer='container:IT_Interview_Bully.xcodeproj'>
          </BuildableReference>
       </BuildableProductRunnable>
    <PreActions><ExecutionAction ActionType='Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction'><ActionContent scriptText='if [ -x &quot;$SRCROOT/scripts/local_quality_gate.sh&quot; ]; then
@@ -30,7 +30,7 @@
 else
   echo &quot;warning: scripts/local_quality_gate.sh not found or not executable.&quot;
 fi
-' title='Local Quality Gate'><EnvironmentBuildable><BuildableReference BlueprintIdentifier='A1547EB3CD621F00E6237576' BlueprintName='IT_Interview_Bully' BuildableIdentifier='primary' BuildableName='IT_Interview_Bully.app' ReferencedContainer='container:IT_Interview_Bully.xcodeproj'/></EnvironmentBuildable></ActionContent></ExecutionAction></PreActions></LaunchAction>
+' title='Local Quality Gate'><EnvironmentBuildable><BuildableReference BlueprintIdentifier='CC0A01E3625449F6330D9456' BlueprintName='IT_Interview_Bully' BuildableIdentifier='primary' BuildableName='IT_Interview_Bully.app' ReferencedContainer='container:IT_Interview_Bully.xcodeproj'/></EnvironmentBuildable></ActionContent></ExecutionAction></PreActions></LaunchAction>
    <ProfileAction buildConfiguration='Release' debugDocumentVersioning='YES' savedToolIdentifier='' shouldUseLaunchSchemeArgsEnv='YES' useCustomWorkingDirectory='NO'>
    </ProfileAction>
    <AnalyzeAction buildConfiguration='Debug'>
@@ -41,5 +41,5 @@ fi
 else
   echo &quot;warning: scripts/local_quality_gate.sh not found or not executable.&quot;
 fi
-' title='Local Quality Gate'><EnvironmentBuildable><BuildableReference BlueprintIdentifier='A1547EB3CD621F00E6237576' BlueprintName='IT_Interview_Bully' BuildableIdentifier='primary' BuildableName='IT_Interview_Bully.app' ReferencedContainer='container:IT_Interview_Bully.xcodeproj'/></EnvironmentBuildable></ActionContent></ExecutionAction></PreActions></ArchiveAction>
+' title='Local Quality Gate'><EnvironmentBuildable><BuildableReference BlueprintIdentifier='CC0A01E3625449F6330D9456' BlueprintName='IT_Interview_Bully' BuildableIdentifier='primary' BuildableName='IT_Interview_Bully.app' ReferencedContainer='container:IT_Interview_Bully.xcodeproj'/></EnvironmentBuildable></ActionContent></ExecutionAction></PreActions></ArchiveAction>
 </Scheme>

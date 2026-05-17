@@ -38,7 +38,7 @@ app_target.build_configurations.each do |config|
   config.build_settings['DEVELOPMENT_ASSET_PATHS'] = '""'
   config.build_settings['LD_RUNPATH_SEARCH_PATHS'] = '$(inherited) @executable_path/Frameworks'
   config.build_settings['SUPPORTED_PLATFORMS'] = 'iphoneos iphonesimulator'
-  config.build_settings['MARKETING_VERSION'] = '1.0'
+  config.build_settings['MARKETING_VERSION'] = '1.0.1'
   config.build_settings['CURRENT_PROJECT_VERSION'] = '1'
 end
 
@@ -126,9 +126,8 @@ add_source_files(
     'Presentation/Common/LoadingStateView.swift',
     'Presentation/Common/Markdown/MarkdownRenderableView.swift',
     'Presentation/Common/Markdown/MarkdownViewController.swift',
-    'Presentation/Common/Markdown/MarkdownViewContainer.swift',
-    'Presentation/QuestionList/QuestionListView.swift',
-    'Presentation/QuestionDetail/QuestionDetailView.swift',
+    'Presentation/QuestionList/SSQuestionListViewController.swift',
+    'Presentation/QuestionDetail/SSQuestionDetailViewController.swift',
     'ViewModels/QuestionListViewModel.swift',
     'ViewModels/QuestionDetailViewModel.swift',
     'Domain/Models/InterviewCategory.swift',
@@ -150,7 +149,8 @@ add_resource_files(
     'Resources/Assets.xcassets',
     'Resources/interview_index.json',
     'Resources/markdown/runtime-method-swizzling.md',
-    'Resources/markdown/memory-retain-cycle.md'
+    'Resources/markdown/memory-retain-cycle.md',
+    'Resources/markdown/iOS面试资深解答'
   ]
 )
 
@@ -159,7 +159,8 @@ add_source_files(
   tests_group,
   [
     'InterviewRepositoryTests.swift',
-    'QuestionDetailViewModelTests.swift'
+    'QuestionDetailViewModelTests.swift',
+    'QuestionListViewModelTests.swift'
   ]
 )
 

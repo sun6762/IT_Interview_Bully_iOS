@@ -53,5 +53,12 @@ nesting:
   type_level:
     warning: 2
 
-reporter: "xcode"
+custom_rules:
+  ss_prefix_for_types:
+    included: "IT_Interview_Bully/.*\\.swift"
+    name: "SS Prefix for Types"
+    regex: "\\b(class|struct|enum|protocol)\\s+(?!SS)[A-Z][A-Za-z0-9_]*"
+    message: "Custom types in app code must start with 'SS'."
+    severity: error
 
+reporter: "xcode"
