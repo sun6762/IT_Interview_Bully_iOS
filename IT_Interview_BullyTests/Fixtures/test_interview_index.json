@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "id": "runtime",
+      "title": "Runtime",
+      "description": "Test category"
+    }
+  ],
+  "questions": [
+    {
+      "id": "sample",
+      "title": "Sample Question",
+      "categoryID": "runtime",
+      "tags": ["test", "sample"],
+      "markdownPath": "markdown/sample-question.md"
+    }
+  ]
+}
+

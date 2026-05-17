@@ -1,0 +1,57 @@
+included:
+  - IT_Interview_Bully
+  - IT_Interview_BullyTests
+
+excluded:
+  - Pods
+  - build
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - first_where
+  - modifier_order
+  - redundant_nil_coalescing
+  - sorted_imports
+  - vertical_whitespace_closing_braces
+
+disabled_rules:
+  - trailing_whitespace
+  - todo
+
+analyzer_rules:
+  - unused_declaration
+  - unused_import
+
+line_length:
+  warning: 120
+  error: 160
+  ignores_comments: true
+  ignores_urls: true
+
+file_length:
+  warning: 400
+  error: 600
+
+type_body_length:
+  warning: 250
+  error: 350
+
+function_body_length:
+  warning: 40
+  error: 70
+
+identifier_name:
+  min_length:
+    warning: 2
+  excluded:
+    - id
+    - x
+    - y
+
+nesting:
+  type_level:
+    warning: 2
+
+reporter: "xcode"
+

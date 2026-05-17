@@ -1,0 +1,20 @@
+PODS:
+  - Highlightr (2.1.0)
+  - MarkdownView (1.9.1)
+
+DEPENDENCIES:
+  - Highlightr (~> 2.1)
+  - MarkdownView (~> 1.9)
+
+SPEC REPOS:
+  trunk:
+    - Highlightr
+    - MarkdownView
+
+SPEC CHECKSUMS:
+  Highlightr: 595f3e100737c8de41113385da8bd0b5b65212c6
+  MarkdownView: 22249778219cc22901f1454e8355298dd0bda7f0
+
+PODFILE CHECKSUM: 27e01206600e302d9df5f73417e3f4dbb835e2a2
+
+COCOAPODS: 1.14.2

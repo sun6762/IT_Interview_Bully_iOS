@@ -1,0 +1,31 @@
+{
+  "categories": [
+    {
+      "id": "runtime",
+      "title": "Runtime",
+      "description": "Message sending, isa, method resolution, swizzling."
+    },
+    {
+      "id": "memory",
+      "title": "Memory",
+      "description": "ARC, ownership, retain cycles, weak references."
+    }
+  ],
+  "questions": [
+    {
+      "id": "runtime-swizzling",
+      "title": "Method Swizzling 的原理和边界是什么？",
+      "categoryID": "runtime",
+      "tags": ["objc", "runtime", "swizzling"],
+      "markdownPath": "markdown/runtime-method-swizzling.md"
+    },
+    {
+      "id": "memory-retain-cycle",
+      "title": "如何系统性排查 iOS 中的循环引用？",
+      "categoryID": "memory",
+      "tags": ["arc", "retain-cycle", "instruments"],
+      "markdownPath": "markdown/memory-retain-cycle.md"
+    }
+  ]
+}
+

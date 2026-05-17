@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06E0E946B281542BFD747BCB /* Pods_IT_Interview_BullyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B85A0D83B81DDF29E88F314 /* Pods_IT_Interview_BullyTests.framework */; };
+		0A87954724637653451DF83D /* test_interview_index.json in Resources */ = {isa = PBXBuildFile; fileRef = EE66518D6A6658697A076FF8 /* test_interview_index.json */; };
+		0BD0AA994E619E3A838496F2 /* InterviewQuestionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B8BA82A27C0CC0FDFCE513 /* InterviewQuestionDetail.swift */; };
+		0C5590AB4A11BA3B26856263 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9F87BE684494E170001D68 /* Foundation.framework */; };
+		0F152A84D821231C4631A8A5 /* MarkdownViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA83683E8FF725B5411827 /* MarkdownViewContainer.swift */; };
+		1446FFD8EE24796BC5FA7B7C /* QuestionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54464E88FF4B0B79268230B0 /* QuestionDetailViewModel.swift */; };
+		1ACA174E127D57298EB68DBA /* QuestionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1778307715730FD7AA0DB3B /* QuestionListViewModel.swift */; };
+		1E18D96F8D6E528DA6D8EBEC /* runtime-method-swizzling.md in Resources */ = {isa = PBXBuildFile; fileRef = E08E3F010E5B950089E6F7F0 /* runtime-method-swizzling.md */; };
+		200320B70F5F0DD7EFA49638 /* invalid_interview_index.json in Resources */ = {isa = PBXBuildFile; fileRef = 9923D0FDD91DB561F0142DA8 /* invalid_interview_index.json */; };
+		2C4D96CBBBDCF8CAB7877DAD /* InterviewRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB82FC6A50961A8CDCE1CC3B /* InterviewRepositoryTests.swift */; };
+		3209DCFA41C9BFA3308702E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3305122E2CCB5C63AC12820 /* SceneDelegate.swift */; };
+		3304B2F7B5C88BD91E6A8A9E /* BundleResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8E145DB73EE0B72E5D59C /* BundleResourceLoader.swift */; };
+		3B85B7F57B92492615888B58 /* interview_index.json in Resources */ = {isa = PBXBuildFile; fileRef = B0189298017968E81A022F6A /* interview_index.json */; };
+		43F9E3D75F2DBF6428725045 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9F87BE684494E170001D68 /* Foundation.framework */; };
+		497D666E8329A18E761CD1DA /* MarkdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F49A780324B1D75E9830576 /* MarkdownViewController.swift */; };
+		4AA4A6E7981EFF9ACFE04119 /* QuestionDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B77B45EE86B46B2CDC2F9B /* QuestionDetailViewModelTests.swift */; };
+		5A6427D4E6B50BCEEA95EEC4 /* InterviewIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2F257BAB7A58B78EF9976 /* InterviewIndex.swift */; };
+		5B96D60D5DE482A33053D1C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7D366326B2DD7FAEF2B40 /* AppDelegate.swift */; };
+		6181DE4209D7BA80E3819BE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A50CB4913FF73D5A2964DF /* LaunchScreen.storyboard */; };
+		690F6715E823219931C10DDA /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327D89742289EA4163D64A0F /* AppDIContainer.swift */; };
+		76979092C53B597393000E52 /* Pods_IT_Interview_Bully.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B4E56DB63D417A358F7527 /* Pods_IT_Interview_Bully.framework */; };
+		80C4F785031CE94CB62DA58E /* memory-retain-cycle.md in Resources */ = {isa = PBXBuildFile; fileRef = 90FAC12FA373C6540A8F9F53 /* memory-retain-cycle.md */; };
+		82724EC8883FBC75A4F39685 /* MarkdownRenderableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02B431868055ABA1346AEF /* MarkdownRenderableView.swift */; };
+		86EBB668A1D59F4E2E5E0F53 /* InterviewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD70B0E1A6482D10F24912 /* InterviewRepository.swift */; };
+		8B7B03D866EA8769E9C06146 /* LoadingStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D07ACF259A25DB653612E /* LoadingStateView.swift */; };
+		9FEB9C54A68941C419D93C95 /* sample-question.md in Resources */ = {isa = PBXBuildFile; fileRef = 58F5B20FE810E830C9545168 /* sample-question.md */; };
+		AFC95F48213A705AE719C3AA /* QuestionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14C0D4B82514C895393285E /* QuestionDetailView.swift */; };
+		C12C4A5D0D4293F0C8B446C4 /* InterviewCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B485474C36B63878A394EEE /* InterviewCategory.swift */; };
+		C9CCAA8C071A4E81A90ED5D5 /* BundleInterviewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFCC9C0B248D5995F108FA2 /* BundleInterviewRepository.swift */; };
+		CC3F5BD3EF08EB4BF74236D5 /* InterviewRepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F812EB0484C1399D6922489 /* InterviewRepositoryError.swift */; };
+		D52A20986929B221B3FDA058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE874035682DF88A87213F14 /* Assets.xcassets */; };
+		DC898670AA36F1D516DFE911 /* LoadableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE7D3B441B96CF00AEEE06F /* LoadableState.swift */; };
+		E0AEF6BB6561C4A926230477 /* InterviewQuestionSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709A58C6BB317D96203343C /* InterviewQuestionSummary.swift */; };
+		EBAF88181A340444A6DE2536 /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03363C1EB79806F01ADB9E56 /* QuestionListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A285BFC0C985DA9B5F8C105F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F68348B98BC0B6868CD44E06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1547EB3CD621F00E6237576;
+			remoteInfo = IT_Interview_Bully;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03363C1EB79806F01ADB9E56 /* QuestionListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
+		07B8BA82A27C0CC0FDFCE513 /* InterviewQuestionDetail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterviewQuestionDetail.swift; sourceTree = "<group>"; };
+		0F49A780324B1D75E9830576 /* MarkdownViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MarkdownViewController.swift; sourceTree = "<group>"; };
+		0F812EB0484C1399D6922489 /* InterviewRepositoryError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterviewRepositoryError.swift; sourceTree = "<group>"; };
+		16A50CB4913FF73D5A2964DF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24B6E9E0800DB452EBE42068 /* Pods-IT_Interview_Bully.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IT_Interview_Bully.debug.xcconfig"; path = "Target Support Files/Pods-IT_Interview_Bully/Pods-IT_Interview_Bully.debug.xcconfig"; sourceTree = "<group>"; };
+		2B485474C36B63878A394EEE /* InterviewCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterviewCategory.swift; sourceTree = "<group>"; };
+		327D89742289EA4163D64A0F /* AppDIContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		384ED2A2B8954FBED15F1BBD /* IT_Interview_Bully.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = IT_Interview_Bully.app; path = IT_Interview_Bully.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38BD70B0E1A6482D10F24912 /* InterviewRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterviewRepository.swift; sourceTree = "<group>"; };
+		45B4E56DB63D417A358F7527 /* Pods_IT_Interview_Bully.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IT_Interview_Bully.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B2F257BAB7A58B78EF9976 /* InterviewIndex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterviewIndex.swift; sourceTree = "<group>"; };
+		54464E88FF4B0B79268230B0 /* QuestionDetailViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QuestionDetailViewModel.swift; sourceTree = "<group>"; };
+		58F5B20FE810E830C9545168 /* sample-question.md */ = {isa = PBXFileReference; includeInIndex = 1; path = "sample-question.md"; sourceTree = "<group>"; };
+		5B85A0D83B81DDF29E88F314 /* Pods_IT_Interview_BullyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IT_Interview_BullyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61F8E145DB73EE0B72E5D59C /* BundleResourceLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BundleResourceLoader.swift; sourceTree = "<group>"; };
+		7D02B830A56FE3E8D33DC510 /* IT_Interview_BullyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = IT_Interview_BullyTests.xctest; path = IT_Interview_BullyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8709A58C6BB317D96203343C /* InterviewQuestionSummary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterviewQuestionSummary.swift; sourceTree = "<group>"; };
+		90FAC12FA373C6540A8F9F53 /* memory-retain-cycle.md */ = {isa = PBXFileReference; includeInIndex = 1; path = "memory-retain-cycle.md"; sourceTree = "<group>"; };
+		94B9079EF64258694549B4EA /* Pods-IT_Interview_BullyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IT_Interview_BullyTests.release.xcconfig"; path = "Target Support Files/Pods-IT_Interview_BullyTests/Pods-IT_Interview_BullyTests.release.xcconfig"; sourceTree = "<group>"; };
+		9923D0FDD91DB561F0142DA8 /* invalid_interview_index.json */ = {isa = PBXFileReference; includeInIndex = 1; path = invalid_interview_index.json; sourceTree = "<group>"; };
+		9AFCC9C0B248D5995F108FA2 /* BundleInterviewRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BundleInterviewRepository.swift; sourceTree = "<group>"; };
+		9BE7D3B441B96CF00AEEE06F /* LoadableState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadableState.swift; sourceTree = "<group>"; };
+		9E5D07ACF259A25DB653612E /* LoadingStateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingStateView.swift; sourceTree = "<group>"; };
+		9E9F87BE684494E170001D68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AB82FC6A50961A8CDCE1CC3B /* InterviewRepositoryTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterviewRepositoryTests.swift; sourceTree = "<group>"; };
+		AE874035682DF88A87213F14 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0189298017968E81A022F6A /* interview_index.json */ = {isa = PBXFileReference; includeInIndex = 1; path = interview_index.json; sourceTree = "<group>"; };
+		BE78EE215F0F0453A85621B4 /* generate_project.rb */ = {isa = PBXFileReference; includeInIndex = 1; path = generate_project.rb; sourceTree = "<group>"; };
+		C1778307715730FD7AA0DB3B /* QuestionListViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QuestionListViewModel.swift; sourceTree = "<group>"; };
+		C9ABE302852BEA4A04BC0B09 /* swiftlint.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = swiftlint.sh; sourceTree = "<group>"; };
+		CB634A18147844FF6D71A24D /* Pods-IT_Interview_BullyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IT_Interview_BullyTests.debug.xcconfig"; path = "Target Support Files/Pods-IT_Interview_BullyTests/Pods-IT_Interview_BullyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF02B431868055ABA1346AEF /* MarkdownRenderableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MarkdownRenderableView.swift; sourceTree = "<group>"; };
+		D4CA83683E8FF725B5411827 /* MarkdownViewContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MarkdownViewContainer.swift; sourceTree = "<group>"; };
+		DCC195453CE4F5E19CC14751 /* Pods-IT_Interview_Bully.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IT_Interview_Bully.release.xcconfig"; path = "Target Support Files/Pods-IT_Interview_Bully/Pods-IT_Interview_Bully.release.xcconfig"; sourceTree = "<group>"; };
+		E08E3F010E5B950089E6F7F0 /* runtime-method-swizzling.md */ = {isa = PBXFileReference; includeInIndex = 1; path = "runtime-method-swizzling.md"; sourceTree = "<group>"; };
+		E14C0D4B82514C895393285E /* QuestionDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QuestionDetailView.swift; sourceTree = "<group>"; };
+		E3305122E2CCB5C63AC12820 /* SceneDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EE66518D6A6658697A076FF8 /* test_interview_index.json */ = {isa = PBXFileReference; includeInIndex = 1; path = test_interview_index.json; sourceTree = "<group>"; };
+		F1F7D366326B2DD7FAEF2B40 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8B77B45EE86B46B2CDC2F9B /* QuestionDetailViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QuestionDetailViewModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F4F62A464F88AA30384521F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F9E3D75F2DBF6428725045 /* Foundation.framework in Frameworks */,
+				06E0E946B281542BFD747BCB /* Pods_IT_Interview_BullyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0A244A18104E6123C3A1D91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C5590AB4A11BA3B26856263 /* Foundation.framework in Frameworks */,
+				76979092C53B597393000E52 /* Pods_IT_Interview_Bully.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		004D81EA84D71248F61B6F67 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				38BD70B0E1A6482D10F24912 /* InterviewRepository.swift */,
+			);
+			name = Repositories;
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0531776DDDF8D247A024758E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48B2F257BAB7A58B78EF9976 /* InterviewIndex.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		05C46941B476C1115EFE73AC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9E9F87BE684494E170001D68 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		10532AC52F3CD42FFA5B9B69 /* IT_Interview_BullyTests */ = {
+			isa = PBXGroup;
+			children = (
+				B38BBFEC75DD52C39B0AD0E3 /* Fixtures */,
+				AB82FC6A50961A8CDCE1CC3B /* InterviewRepositoryTests.swift */,
+				F8B77B45EE86B46B2CDC2F9B /* QuestionDetailViewModelTests.swift */,
+			);
+			name = IT_Interview_BullyTests;
+			path = IT_Interview_BullyTests;
+			sourceTree = "<group>";
+		};
+		11913767F3D0B3A9671F88EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B485474C36B63878A394EEE /* InterviewCategory.swift */,
+				8709A58C6BB317D96203343C /* InterviewQuestionSummary.swift */,
+				07B8BA82A27C0CC0FDFCE513 /* InterviewQuestionDetail.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F2AC63A0A49A0B58CF7D575 /* markdown */ = {
+			isa = PBXGroup;
+			children = (
+				58F5B20FE810E830C9545168 /* sample-question.md */,
+			);
+			name = markdown;
+			path = markdown;
+			sourceTree = "<group>";
+		};
+		2BCF1359060187CB4C25572F /* IT_Interview_Bully */ = {
+			isa = PBXGroup;
+			children = (
+				7446CB14E3AA61430CBDD3F3 /* App */,
+				5C4535DD4BFC2C6D1F8658D9 /* Presentation */,
+				D968C7B799DF34FEE743315A /* ViewModels */,
+				52E8F4FED82BF3D8D50D908E /* Domain */,
+				A5A52F6E7DD6AE3AAF78C530 /* Data */,
+				32D3FBBB7FF511BAE3E33F22 /* Resources */,
+			);
+			name = IT_Interview_Bully;
+			path = IT_Interview_Bully;
+			sourceTree = "<group>";
+		};
+		32D3FBBB7FF511BAE3E33F22 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				906C4682E7B4CAEF1B47654B /* Assets.xcassets */,
+				CCA9F710E6F78193766E26B6 /* Base.lproj */,
+				495910E4C5050F2A8DE5C6A0 /* markdown */,
+				AE874035682DF88A87213F14 /* Assets.xcassets */,
+				B0189298017968E81A022F6A /* interview_index.json */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		38552A966060395C840B0420 /* QuestionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E14C0D4B82514C895393285E /* QuestionDetailView.swift */,
+			);
+			name = QuestionDetail;
+			path = QuestionDetail;
+			sourceTree = "<group>";
+		};
+		44628C3DE874B75353AC2DC7 /* QuestionList */ = {
+			isa = PBXGroup;
+			children = (
+				03363C1EB79806F01ADB9E56 /* QuestionListView.swift */,
+			);
+			name = QuestionList;
+			path = QuestionList;
+			sourceTree = "<group>";
+		};
+		495910E4C5050F2A8DE5C6A0 /* markdown */ = {
+			isa = PBXGroup;
+			children = (
+				E08E3F010E5B950089E6F7F0 /* runtime-method-swizzling.md */,
+				90FAC12FA373C6540A8F9F53 /* memory-retain-cycle.md */,
+			);
+			name = markdown;
+			path = markdown;
+			sourceTree = "<group>";
+		};
+		4AB0EE7E89B26AD2F79425DA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C7616D0030C2A54DCBC1FDCA /* Markdown */,
+				9BE7D3B441B96CF00AEEE06F /* LoadableState.swift */,
+				9E5D07ACF259A25DB653612E /* LoadingStateView.swift */,
+			);
+			name = Common;
+			path = Common;
+			sourceTree = "<group>";
+		};
+		52E8F4FED82BF3D8D50D908E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				11913767F3D0B3A9671F88EB /* Models */,
+				004D81EA84D71248F61B6F67 /* Repositories */,
+			);
+			name = Domain;
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5C4535DD4BFC2C6D1F8658D9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4AB0EE7E89B26AD2F79425DA /* Common */,
+				44628C3DE874B75353AC2DC7 /* QuestionList */,
+				38552A966060395C840B0420 /* QuestionDetail */,
+			);
+			name = Presentation;
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6150241907DA9BE26224823A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9AFCC9C0B248D5995F108FA2 /* BundleInterviewRepository.swift */,
+			);
+			name = Repositories;
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		7446CB14E3AA61430CBDD3F3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7D366326B2DD7FAEF2B40 /* AppDelegate.swift */,
+				E3305122E2CCB5C63AC12820 /* SceneDelegate.swift */,
+				327D89742289EA4163D64A0F /* AppDIContainer.swift */,
+			);
+			name = App;
+			path = App;
+			sourceTree = "<group>";
+		};
+		83CE566133446F623792323B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05C46941B476C1115EFE73AC /* iOS */,
+				45B4E56DB63D417A358F7527 /* Pods_IT_Interview_Bully.framework */,
+				5B85A0D83B81DDF29E88F314 /* Pods_IT_Interview_BullyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89C51217B611F421E6FFBF33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				384ED2A2B8954FBED15F1BBD /* IT_Interview_Bully.app */,
+				7D02B830A56FE3E8D33DC510 /* IT_Interview_BullyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		906C4682E7B4CAEF1B47654B /* Assets.xcassets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assets.xcassets;
+			path = Assets.xcassets;
+			sourceTree = "<group>";
+		};
+		921165A3CBACE0D79448D388 = {
+			isa = PBXGroup;
+			children = (
+				89C51217B611F421E6FFBF33 /* Products */,
+				83CE566133446F623792323B /* Frameworks */,
+				2BCF1359060187CB4C25572F /* IT_Interview_Bully */,
+				10532AC52F3CD42FFA5B9B69 /* IT_Interview_BullyTests */,
+				96990761EF579291887A5CDE /* scripts */,
+				EEA608B6A6820A4E97B0C852 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		93CD741F61E0FC5F19D54C96 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				0F812EB0484C1399D6922489 /* InterviewRepositoryError.swift */,
+			);
+			name = Errors;
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		96990761EF579291887A5CDE /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				BE78EE215F0F0453A85621B4 /* generate_project.rb */,
+				C9ABE302852BEA4A04BC0B09 /* swiftlint.sh */,
+			);
+			name = scripts;
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		A5A52F6E7DD6AE3AAF78C530 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				93CD741F61E0FC5F19D54C96 /* Errors */,
+				0531776DDDF8D247A024758E /* Models */,
+				6150241907DA9BE26224823A /* Repositories */,
+				A67B159C14D7D58D72543978 /* Services */,
+			);
+			name = Data;
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A67B159C14D7D58D72543978 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				61F8E145DB73EE0B72E5D59C /* BundleResourceLoader.swift */,
+			);
+			name = Services;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B38BBFEC75DD52C39B0AD0E3 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				1F2AC63A0A49A0B58CF7D575 /* markdown */,
+				EE66518D6A6658697A076FF8 /* test_interview_index.json */,
+				9923D0FDD91DB561F0142DA8 /* invalid_interview_index.json */,
+			);
+			name = Fixtures;
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		C7616D0030C2A54DCBC1FDCA /* Markdown */ = {
+			isa = PBXGroup;
+			children = (
+				CF02B431868055ABA1346AEF /* MarkdownRenderableView.swift */,
+				0F49A780324B1D75E9830576 /* MarkdownViewController.swift */,
+				D4CA83683E8FF725B5411827 /* MarkdownViewContainer.swift */,
+			);
+			name = Markdown;
+			path = Markdown;
+			sourceTree = "<group>";
+		};
+		CCA9F710E6F78193766E26B6 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				16A50CB4913FF73D5A2964DF /* LaunchScreen.storyboard */,
+			);
+			name = Base.lproj;
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		D968C7B799DF34FEE743315A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C1778307715730FD7AA0DB3B /* QuestionListViewModel.swift */,
+				54464E88FF4B0B79268230B0 /* QuestionDetailViewModel.swift */,
+			);
+			name = ViewModels;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EEA608B6A6820A4E97B0C852 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCC195453CE4F5E19CC14751 /* Pods-IT_Interview_Bully.release.xcconfig */,
+				24B6E9E0800DB452EBE42068 /* Pods-IT_Interview_Bully.debug.xcconfig */,
+				94B9079EF64258694549B4EA /* Pods-IT_Interview_BullyTests.release.xcconfig */,
+				CB634A18147844FF6D71A24D /* Pods-IT_Interview_BullyTests.debug.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1547EB3CD621F00E6237576 /* IT_Interview_Bully */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B6BAF4F5460098D83777FBE /* Build configuration list for PBXNativeTarget "IT_Interview_Bully" */;
+			buildPhases = (
+				BF61414C3779E1928EA5852D /* [CP] Check Pods Manifest.lock */,
+				FB597B97424C726CDF67491E /* Sources */,
+				A0A244A18104E6123C3A1D91 /* Frameworks */,
+				BB2D2D476EFF917B7B2E6144 /* Resources */,
+				F3DCFD783E635ECD20701206 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IT_Interview_Bully;
+			productName = IT_Interview_Bully;
+			productReference = 384ED2A2B8954FBED15F1BBD /* IT_Interview_Bully.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0B2DB948AB7748FA41F9210 /* IT_Interview_BullyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589919F731603CA7DDA5A05E /* Build configuration list for PBXNativeTarget "IT_Interview_BullyTests" */;
+			buildPhases = (
+				C10986AF180A5814372767B0 /* [CP] Check Pods Manifest.lock */,
+				CE918BC3839BF0406C894670 /* Sources */,
+				3F4F62A464F88AA30384521F /* Frameworks */,
+				1E5F5141E9AA05FF21D9F16A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39CDFDD5A85A62ADD1C5B653 /* PBXTargetDependency */,
+			);
+			name = IT_Interview_BullyTests;
+			productName = IT_Interview_BullyTests;
+			productReference = 7D02B830A56FE3E8D33DC510 /* IT_Interview_BullyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F68348B98BC0B6868CD44E06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+			};
+			buildConfigurationList = 000F0E6F3968B5FB57E3B34A /* Build configuration list for PBXProject "IT_Interview_Bully" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 921165A3CBACE0D79448D388;
+			productRefGroup = 89C51217B611F421E6FFBF33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1547EB3CD621F00E6237576 /* IT_Interview_Bully */,
+				F0B2DB948AB7748FA41F9210 /* IT_Interview_BullyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E5F5141E9AA05FF21D9F16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A87954724637653451DF83D /* test_interview_index.json in Resources */,
+				200320B70F5F0DD7EFA49638 /* invalid_interview_index.json in Resources */,
+				9FEB9C54A68941C419D93C95 /* sample-question.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB2D2D476EFF917B7B2E6144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6181DE4209D7BA80E3819BE8 /* LaunchScreen.storyboard in Resources */,
+				D52A20986929B221B3FDA058 /* Assets.xcassets in Resources */,
+				3B85B7F57B92492615888B58 /* interview_index.json in Resources */,
+				1E18D96F8D6E528DA6D8EBEC /* runtime-method-swizzling.md in Resources */,
+				80C4F785031CE94CB62DA58E /* memory-retain-cycle.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF61414C3779E1928EA5852D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IT_Interview_Bully-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C10986AF180A5814372767B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IT_Interview_BullyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3DCFD783E635ECD20701206 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IT_Interview_Bully/Pods-IT_Interview_Bully-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Highlightr/Highlightr.framework",
+				"${BUILT_PRODUCTS_DIR}/MarkdownView/MarkdownView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Highlightr.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarkdownView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IT_Interview_Bully/Pods-IT_Interview_Bully-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE918BC3839BF0406C894670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4D96CBBBDCF8CAB7877DAD /* InterviewRepositoryTests.swift in Sources */,
+				4AA4A6E7981EFF9ACFE04119 /* QuestionDetailViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB597B97424C726CDF67491E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B96D60D5DE482A33053D1C1 /* AppDelegate.swift in Sources */,
+				3209DCFA41C9BFA3308702E1 /* SceneDelegate.swift in Sources */,
+				690F6715E823219931C10DDA /* AppDIContainer.swift in Sources */,
+				DC898670AA36F1D516DFE911 /* LoadableState.swift in Sources */,
+				8B7B03D866EA8769E9C06146 /* LoadingStateView.swift in Sources */,
+				82724EC8883FBC75A4F39685 /* MarkdownRenderableView.swift in Sources */,
+				497D666E8329A18E761CD1DA /* MarkdownViewController.swift in Sources */,
+				0F152A84D821231C4631A8A5 /* MarkdownViewContainer.swift in Sources */,
+				EBAF88181A340444A6DE2536 /* QuestionListView.swift in Sources */,
+				AFC95F48213A705AE719C3AA /* QuestionDetailView.swift in Sources */,
+				1ACA174E127D57298EB68DBA /* QuestionListViewModel.swift in Sources */,
+				1446FFD8EE24796BC5FA7B7C /* QuestionDetailViewModel.swift in Sources */,
+				C12C4A5D0D4293F0C8B446C4 /* InterviewCategory.swift in Sources */,
+				E0AEF6BB6561C4A926230477 /* InterviewQuestionSummary.swift in Sources */,
+				0BD0AA994E619E3A838496F2 /* InterviewQuestionDetail.swift in Sources */,
+				86EBB668A1D59F4E2E5E0F53 /* InterviewRepository.swift in Sources */,
+				CC3F5BD3EF08EB4BF74236D5 /* InterviewRepositoryError.swift in Sources */,
+				5A6427D4E6B50BCEEA95EEC4 /* InterviewIndex.swift in Sources */,
+				3304B2F7B5C88BD91E6A8A9E /* BundleResourceLoader.swift in Sources */,
+				C9CCAA8C071A4E81A90ED5D5 /* BundleInterviewRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39CDFDD5A85A62ADD1C5B653 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IT_Interview_Bully;
+			target = A1547EB3CD621F00E6237576 /* IT_Interview_Bully */;
+			targetProxy = A285BFC0C985DA9B5F8C105F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		460254EB1B50AB10122A2EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		67770F8ED666C22F7449001E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94B9079EF64258694549B4EA /* Pods-IT_Interview_BullyTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_TESTABILITY = NO;
+				INFOPLIST_FILE = IT_Interview_BullyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobo.ITInterviewBullyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IT_Interview_Bully.app/IT_Interview_Bully";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BADE78F69A711AC5E6EA570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB634A18147844FF6D71A24D /* Pods-IT_Interview_BullyTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = IT_Interview_BullyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobo.ITInterviewBullyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IT_Interview_Bully.app/IT_Interview_Bully";
+			};
+			name = Debug;
+		};
+		8BB0F9AC4F5CBE0AC2231E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B6E9E0800DB452EBE42068 /* Pods-IT_Interview_Bully.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"\"";
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = IT_Interview_Bully/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobo.ITInterviewBully;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		936D5F217AE457A285097EAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCC195453CE4F5E19CC14751 /* Pods-IT_Interview_Bully.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"\"";
+				ENABLE_TESTABILITY = NO;
+				INFOPLIST_FILE = IT_Interview_Bully/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobo.ITInterviewBully;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94D76811DAFA98DCC56D990B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000F0E6F3968B5FB57E3B34A /* Build configuration list for PBXProject "IT_Interview_Bully" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				460254EB1B50AB10122A2EBE /* Debug */,
+				94D76811DAFA98DCC56D990B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B6BAF4F5460098D83777FBE /* Build configuration list for PBXNativeTarget "IT_Interview_Bully" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				936D5F217AE457A285097EAB /* Release */,
+				8BB0F9AC4F5CBE0AC2231E2D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		589919F731603CA7DDA5A05E /* Build configuration list for PBXNativeTarget "IT_Interview_BullyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67770F8ED666C22F7449001E /* Release */,
+				8BADE78F69A711AC5E6EA570 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F68348B98BC0B6868CD44E06 /* Project object */;
+}

@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "id": "runtime",
+      "title": "Runtime",
+      "description": "Broken markdown reference"
+    }
+  ],
+  "questions": [
+    {
+      "id": "broken",
+      "title": "Broken Question",
+      "categoryID": "runtime",
+      "tags": ["broken"],
+      "markdownPath": "markdown/missing-file.md"
+    }
+  ]
+}
+
